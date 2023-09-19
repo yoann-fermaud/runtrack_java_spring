@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    default: dev
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+greeting:
+  message: Hello World from dev!
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+greeting:
+  message: Hello World from prod!
+
+
